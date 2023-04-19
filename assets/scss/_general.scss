@@ -1,0 +1,19 @@
+.container {
+    max-width: 1120px;
+}
+
+a, button {
+    cursor: pointer;
+    transition: all .25s ease !important;
+}
+
+input.form-control {
+    border: 0 none;
+    &:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+}
