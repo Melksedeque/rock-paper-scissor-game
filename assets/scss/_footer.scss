@@ -1,16 +1,13 @@
-footer.site-footer {
-    background: $very_dark_violet;
-    div.attribution {
-        background: transparent;
-        color: $gray;
-        padding: 10px;
-        text-align: center;
-        a {
-            color: $grayish_violet;
-            transition: all .25s ease;
-            &:hover {
-                color: white;
-            }
+footer.attribution {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    a {
+        color: $score;
+        transition: all .25s ease;
+        &:hover {
+            color: white;
         }
     }
 }
