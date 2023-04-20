@@ -1,23 +1,32 @@
 /**
 *   COLORS
 */
-$cyan: hsl(180, 66%, 49%);
-$dark_violet: hsl(257, 27%, 26%);
-$red: hsl(0, 87%, 67%);
-$gray: hsl(0, 0%, 75%);
-$grayish_violet: hsl(257, 7%, 63%);
-$very_dark_blue: hsl(255, 11%, 22%);
-$very_dark_violet: hsl(260, 8%, 14%);
+/**
+*   Gradients
+*/
+$spock: hsl(189, 59%, 53%), hsl(189, 58%, 57%);
+$lizard: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+$rock: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+$paper: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+$scissor: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+$radial: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+
+/**
+*   Neutral
+*/
+$dark_text: hsl(229, 25%, 31%);
+$score: hsl(229, 64%, 46%);
+$headers: hsl(217, 16%, 45%);
 
 /**
 *   FONT
 */
-$font: 'Poppins', sans-serif;
-$regular: 500;
+$font: 'Barlow Semi Condensed', sans-serif;
+$regular: 600;
 $bold: 700;
 
 /**
 * SCREEN SIZES
 */
 $mobile: 375px;
-$desktop: 1440px;
+$desktop: 1366px;
