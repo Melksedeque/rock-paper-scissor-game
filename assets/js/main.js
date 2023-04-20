@@ -1,15 +1,11 @@
-function copyText() {
-    // Get the text field
-    const item = document.querySelector('ul.links-list li');
-    var copyText = document.getElementById("myInput");
-  
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-  
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
-} 
+let score = parseInt(localStorage.getItem("score")) || 0;
+
+function clearScore() {
+  score = 0;
+  localStorage.setItem("score", score); // Reseta o score em localStorage
+  const scoreText = document.querySelector("#score");
+  scoreText.textContent = score;
+}
+
+const clearScoreButton = document.querySelector("#clearScore");
+clearScoreButton.addEventListener("click", clearScore);
