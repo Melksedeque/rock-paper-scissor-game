@@ -9,3 +9,4 @@ function clearScore() {
 
 const clearScoreButton = document.querySelector("#clearScore");
 clearScoreButton.addEventListener("click", clearScore);
+
