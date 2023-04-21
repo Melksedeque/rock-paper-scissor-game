@@ -1,4 +1,6 @@
-
+main.page {
+    background: radial-gradient($radial);
+}
 
 @media screen and (max-width: $mobile) {
 }
