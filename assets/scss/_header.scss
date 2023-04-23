@@ -1,4 +1,34 @@
-
+header.title {
+    align-items: center;
+    border: 2px solid $headers;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px;
+    h1 {
+        color: white;
+        font: $bold 40px/32px $font;
+        text-transform: uppercase;
+    }
+    div.score {
+        background: white;
+        border-radius: 7px;
+        padding: 10px 20px;
+        text-align: center;
+        h2 {
+            color: $score;
+            font: $regular 16px $font;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        h3 {
+            color: $dark_text;
+            font: $bold 50px $font;
+            margin-bottom: 5px;
+        }
+    }
+}
 
 
 @media screen and (max-width: $mobile) {
