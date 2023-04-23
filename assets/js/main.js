@@ -2,7 +2,7 @@ let score = parseInt(localStorage.getItem("score")) || 0;
 
 function clearScore() {
   score = 0;
-  localStorage.setItem("score", score); // Reseta o score em localStorage
+  localStorage.setItem("score", score);
   const scoreText = document.querySelector("#score");
   scoreText.textContent = score;
 }
