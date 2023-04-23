@@ -1,5 +1,6 @@
 main.page {
     background: radial-gradient($radial);
+    padding: 50px;
 }
 
 @media screen and (max-width: $mobile) {
