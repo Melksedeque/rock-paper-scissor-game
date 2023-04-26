@@ -9,7 +9,6 @@ header.title {
     h1 {
         color: white;
         font: $bold 40px/32px $font;
-        text-transform: uppercase;
     }
     div.score {
         background: white;
@@ -20,7 +19,6 @@ header.title {
             color: $score;
             font: $regular 16px $font;
             letter-spacing: 2px;
-            text-transform: uppercase;
         }
         h3 {
             color: $dark_text;
