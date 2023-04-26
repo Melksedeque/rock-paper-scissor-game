@@ -1,8 +1,30 @@
-footer.attribution {
+div.features {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: right;
+    button {
+        padding: .5rem 3rem;
+        text-transform: uppercase;
+        &:disabled {
+            cursor: not-allowed;
+            pointer-events: auto;
+        }
+    }
+}
+
+div.attribution {
     background: transparent;
+    bottom: 0;
     color: white;
-    padding: 10px;
+    font-size: 12px;
+    margin-top: 50px;
+    padding: 20px;
+    position: absolute;
     text-align: center;
+    width: 100%;
     a {
         color: $score;
         transition: all .25s ease;
