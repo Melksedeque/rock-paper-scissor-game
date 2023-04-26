@@ -1,4 +1,5 @@
 const choices = ['rock', 'paper', 'scissor'];
+const choicesBonus = ['rock', 'paper', 'scissor', 'lizard', 'spock'];
 const btnClear = document.getElementById('btnClearScore');
 const scoreText = document.querySelector("#score");
 const btnPlayAgain = document.getElementById('btnPlayAgain');
