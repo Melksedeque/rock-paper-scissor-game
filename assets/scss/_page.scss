@@ -1,6 +1,107 @@
 main.page {
     background: radial-gradient($radial);
-    padding: 50px;
+    min-height: 100vh;
+    padding: 50px 0 0;
+}
+
+section.game, div.modal {
+    button, span {
+        background: transparent;
+        border: 0 none;
+        border-radius: 1000px;
+        display: inline-block;
+        height: 150px;
+        padding: 5px;
+        position: relative;
+        width: 150px;
+        // position: absolute;
+        svg {
+            background-color: white;
+            border-radius: 1000px;
+            height: 110px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 110px;
+        }
+        &#rock {
+            background: linear-gradient($rock);
+            svg {
+                path {
+                    transform: translate(calc((110px - 48px) / 2), calc((110px - 48px) / 2));
+                }
+            }
+        }
+        &#paper {
+            background: linear-gradient($paper);
+            svg {
+                path {
+                    transform: translate(calc((110px - 49px) / 2), calc((110px - 59px) / 2));
+                }
+            }
+        }
+        &#scissor {
+            background: linear-gradient($scissor);
+            svg {
+                path {
+                    transform: translate(calc((110px - 51px) / 2), calc((110px - 58px) / 2));
+                }
+            }
+        }
+    }
+    div#choices {
+        display: inline-block;
+        height: 400px;
+        width: 675px;
+        position: relative;
+        button {
+            position: absolute;
+            &#rock {
+                left: 50%;
+                top: 80%;
+                transform: translate(-50%, -50%);
+            }
+            &#paper {
+                left: 30%;
+                top: 35%;
+                transform: translate(-50%, -50%);
+            }
+            &#scissor {
+                left: 70%;
+                top: 35%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }    
+    div#result {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        height: 400px;
+        justify-content: space-between;
+        padding: 0 2rem;
+        width: 675px;
+        div.playerChoices, div.cpuChoices {
+            text-align: center;
+        }
+        div.matchResult {
+            text-align: center;
+        }
+        h2, h3 {
+            color: white;
+            font: $bold 20px $font;
+            letter-spacing: 2px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 50px;
+        }
+        a.btn {
+            padding: .5rem 2rem;
+        }
+    }    
 }
 
 @media screen and (max-width: $mobile) {
