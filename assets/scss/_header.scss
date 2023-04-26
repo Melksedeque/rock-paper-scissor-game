@@ -30,4 +30,20 @@ header.title {
 
 
 @media screen and (max-width: $mobile) {
+    header.title {
+        h1 {
+            font-size: 35px;
+        }
+        div.score {
+            h2 {
+                font-size: 14px;
+            }
+            h3 {
+                font-size: 40px;
+            }
+            button {
+                font-size: 12px;
+            }
+        }
+    }
 }

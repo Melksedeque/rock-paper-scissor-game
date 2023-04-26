@@ -13,4 +13,7 @@ a, button {
 }
 
 @media screen and (max-width: $mobile) {
+    div.container {
+        max-width: 350px;
+    }
 }
