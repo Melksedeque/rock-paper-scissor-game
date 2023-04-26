@@ -1,0 +1,26 @@
+div.modal {
+    .modal-header {
+        border: 0 none;
+        padding: 2rem;
+        h2 {
+            color: $dark_text;
+            font: $bold 30px $font !important;
+            text-transform: uppercase;
+        }
+        i {
+            cursor: pointer;
+        }
+    }
+    .modal-body {
+        padding: 2rem;
+        span {
+            background: darken(lightgray, 15%) !important;
+            svg {
+                background: lightgray;
+                path {
+                    fill: darken(lightgray, 15%);
+                }
+            }
+        }
+    }
+}
