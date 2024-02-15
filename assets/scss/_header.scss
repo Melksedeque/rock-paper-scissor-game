@@ -6,14 +6,13 @@ header.title {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 20px;
-    h1 {
-        color: white;
-        font: $bold 40px/32px $font;
+    h1.logoClassic {
+        margin-top: 5px;
     }
     div.score {
         background: white;
         border-radius: 7px;
-        padding: 10px 20px;
+        padding: 7px 20px;
         text-align: center;
         h2 {
             color: $score;
