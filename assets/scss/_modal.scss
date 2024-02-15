@@ -12,15 +12,10 @@ div.modal {
         }
     }
     .modal-body {
+        margin: 0 auto;
         padding: 2rem;
-        span {
-            background: darken(lightgray, 15%) !important;
-            svg {
-                background: lightgray;
-                path {
-                    fill: darken(lightgray, 15%);
-                }
-            }
-        }
+    }
+    button.btn-link:hover svg path {
+        fill: red !important;
     }
 }
